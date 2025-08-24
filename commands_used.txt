@@ -5,3 +5,9 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/SheikhGalib/oop-lab-assignment.git
 git push -u origin main
+
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git init 
+Reinitialized existing Git repository in D:/KUET CSE-2K21/3-1/ISD-lab-3/oop-lab-assignment/.git/
+
+git add .
+git commit -m "Added bankAccount.java"
