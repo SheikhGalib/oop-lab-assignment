@@ -1,3 +1,5 @@
+# -------------TASK-2-------------------
+
 echo "# oop-lab-assignment" >> README.md
 git init
 git add README.md
@@ -9,5 +11,66 @@ git push -u origin main
 PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git init 
 Reinitialized existing Git repository in D:/KUET CSE-2K21/3-1/ISD-lab-3/oop-lab-assignment/.git/
 
-git add .
-git commit -m "Added bankAccount.java"
+
+# ---------------TASK-2--------------------
+
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git add .
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   commands_used.txt
+        new file:   src/BankAccount.java
+
+
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git commit -m "Added bankAccount.java"
+[main 1f455bd] Added bankAccount.java
+ 2 files changed, 34 insertions(+), 1 deletion(-)
+ create mode 100644 src/BankAccount.java
+
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 827 bytes | 827.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/SheikhGalib/oop-lab-assignment.git
+   d571b7c..1f455bd  main -> main
+branch 'main' set up to track 'origin/main'.
+
+
+# --------------TASK-3---------------------
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git checkout -b interest
+Switched to a new branch 'interest'
+
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git status
+On branch interest
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   commands_used.txt
+        modified:   src/BankAccount.java
+
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git commit -m "Added Calculate Interest"
+[interest 973c689] Added Calculate Interest
+ 2 files changed, 39 insertions(+), 2 deletions(-)
+
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git push -u origin interest
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 1.07 KiB | 1.07 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'interest' on GitHub by visiting:
+remote:      https://github.com/SheikhGalib/oop-lab-assignment/pull/new/interest
+remote:
+To https://github.com/SheikhGalib/oop-lab-assignment.git
+ * [new branch]      interest -> interest
+branch 'interest' set up to track 'origin/interest'.
+
+

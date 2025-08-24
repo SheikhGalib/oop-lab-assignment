@@ -24,4 +24,10 @@ public class BankAccount {
     public double checkBalance() {
         return balance;
     }
+
+    public double calculateInterest(double rate) {
+        return balance * rate / 100;
+    }
 }
+
+
