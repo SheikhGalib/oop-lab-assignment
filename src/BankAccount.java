@@ -13,6 +13,8 @@ public class BankAccount {
         if (amount > 0) {
             balance += amount;
         }
+
+        System.err.println("Trying to create merge conflict from transaction-history branch");
     }
     
     public void withdraw(double amount) {

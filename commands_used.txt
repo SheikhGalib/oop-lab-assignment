@@ -43,6 +43,7 @@ branch 'main' set up to track 'origin/main'.
 
 
 # --------------TASK-3---------------------
+
 PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git checkout -b interest
 Switched to a new branch 'interest'
 
@@ -72,5 +73,72 @@ remote:
 To https://github.com/SheikhGalib/oop-lab-assignment.git
  * [new branch]      interest -> interest
 branch 'interest' set up to track 'origin/interest'.
+
+
+# -------------------------TASK-4-----------------------
+
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git checkout -b main
+fatal: a branch named 'main' already exists
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git checkout main   
+error: Your local changes to the following files would be overwritten by checkout:
+        commands_used.txt
+Please commit your changes or stash them before you switch branches.
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git commit -m "updated commands_used.txt"
+[interest f386327] updated commands_used.txt
+ 1 file changed, 32 insertions(+)
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git push -u origin interest
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 757 bytes | 757.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SheikhGalib/oop-lab-assignment.git
+   973c689..f386327  interest -> interest
+branch 'interest' set up to track 'origin/interest'.
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git merge
+
+                                                      git merge interest
+Updating 1f455bd..f386327
+Fast-forward
+ commands_used.txt    | 67 ++++++++++++++++++++++++++++++++++++++++++++++++++--
+ src/BankAccount.java |  6 +++++
+ 2 files changed, 71 insertions(+), 2 deletions(-)
+
+
+# -------------------TASK-5--------------------
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git checkout -b transaction-history
+Switched to a new branch 'transaction-history'
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git add .
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git status
+On branch transaction-history
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   commands_used.txt
+        new file:   src/Transaction.java
+
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git commit -m "Added transaction java"
+[transaction-history fb97d9d] Added transaction java
+ 2 files changed, 82 insertions(+)
+ create mode 100644 src/Transaction.java
+PS D:\KUET CSE-2K21\3-1\ISD-lab-3\oop-lab-assignment> git push -u origin transaction-history
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.21 KiB | 1.21 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'transaction-history' on GitHub by visiting:
+remote:      https://github.com/SheikhGalib/oop-lab-assignment/pull/new/transaction-history
+remote:
+To https://github.com/SheikhGalib/oop-lab-assignment.git
+ * [new branch]      transaction-history -> transaction-history
+branch 'transaction-history' set up to track 'origin/transaction-history'.
 
 
